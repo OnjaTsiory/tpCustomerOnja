@@ -23,10 +23,13 @@ public class CustomerDetailsBean implements Serializable {
 
     private int idCustomer;
     private Customer customer;
-    private DiscountManager discountManager;
+    
 
     @EJB
     private CustomerManager customerManager;
+    
+    @EJB
+    private DiscountManager discountManager;
 
     public int getIdCustomer() {
         return idCustomer;
